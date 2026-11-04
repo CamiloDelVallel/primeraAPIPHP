@@ -1,1 +1,34 @@
-*.sqlite*
+# Dependencias: se instalan con Composer y npm
+/vendor/
+/node_modules/
+
+# Configuración local y secretos
+.env
+.env.*
+!.env.example
+/auth.json
+
+# Archivos generados por Laravel y Vite
+/public/build/
+/public/hot
+/public/storage
+/bootstrap/cache/*.php
+/storage/*.key
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# Base de datos SQLite local
+/database/*.sqlite
+/database/*.sqlite-*
+
+# Caché de pruebas
+.phpunit.cache/
+.phpunit.result.cache
+
+# Configuración personal del editor
+/.idea/
+/.vscode/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
